@@ -1,0 +1,11 @@
+# ZenRay-Edit : project knowledge (7 October 2026)
+
+- Project ID: zenray-edit. (7 October 2026)
+- Canonical feedback: /Users/zenray/.claude/Memory1/Projects/zenray-edit/FEEDBACK.md. (7 October 2026)
+- Append dated decisions and verified knowledge here; retain existing entries. (7 October 2026)
+
+## 7 October 2026 : Media workshop migration
+
+- This project owns the zenray-edit migration, separate from the Assets V2 service project. The current Codex session remains bound to zenray-assets-v2; no second binding is claimed. (7 October 2026)
+- The canonical historical media skill is archived in SkillArchives/MediaWorkshopLegacy-7October2026.tar.gz, 115 regular files, SHA256 e5943a09d67c4547a74c53c8d6c6a82718d7e6cd278c62127bc6c263757d518f. One symbolic link is preserved as a reference, never followed. Local round trip is verified; cloud restoration is pending job 12a7f7cd-c015-4f6f-8be3-9f2bc96e98c1. (7 October 2026)
+- EditSkillAudit.md and EditMigrationPlan.md in the registered workshop identify the full historical corpus, scripts and templates. Preserve this archive before modifying the active library. The new skill, grammar-only default, repaired catalogue, safe exports and Assets-linked output remain to implement and test. (7 October 2026)
