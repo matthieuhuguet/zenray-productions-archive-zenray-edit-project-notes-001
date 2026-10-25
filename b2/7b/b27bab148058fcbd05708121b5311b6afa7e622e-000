@@ -1,0 +1,51 @@
+/* ZenRay-C-Graphite.css : thème QLMarkdown ZenRay C (Graphite), généré le 25 October 2026 par ThemeEngine.js.
+   Modifier les valeurs dans la page index.html de l’atelier, puis Scripts/BuildThemes.mjs --install. */
+@font-face { font-family: "ZR Title"; font-style: italic; font-weight: 400; src: local("GTSectraLCG-RegularItalic"); }
+@font-face { font-family: "ZR Title"; font-style: normal; font-weight: 400; src: local("GTSectraLCG-Regular"); }
+@font-face { font-family: "ZR Title"; font-style: italic; font-weight: 400; src: local("AnthropicSerif-Regular"); unicode-range: U+0030-0039, U+0025, U+20AC, U+00A0, U+202F; }
+@font-face { font-family: "ZR Title"; font-style: normal; font-weight: 400; src: local("AnthropicSerif-Regular"); unicode-range: U+0030-0039, U+0025, U+20AC, U+00A0, U+202F; }
+@font-face { font-family: "ZR Body"; font-style: normal; font-weight: 400; src: local("AnthropicSerif-Regular"); }
+@font-face { font-family: "ZR Body"; font-style: italic; font-weight: 400; src: local("AnthropicSerif-Italic"); }
+@font-face { font-family: "ZR Mono"; font-style: normal; font-weight: 400; src: local("AnthropicMono-Regular"); }
+@font-face { font-family: "ZR UI"; font-style: normal; font-weight: 400; src: local("InterVariable"); }
+:root {
+  --zr-bg: #F2F3F5; --zr-ink: #15171A; --zr-muted: #62666E;
+  --zr-accent: #4371EE; --zr-rule: #DDE0E5; --zr-block: #FFFFFF;
+  --zr-radius: 16px;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+  --zr-bg: #16171A; --zr-ink: #E8EAEE; --zr-muted: #959AA3;
+  --zr-accent: #7FA2FF; --zr-rule: #2C2F35; --zr-block: #1F2125;
+  }
+}
+html, body { background: var(--zr-bg) !important; color: var(--zr-ink); margin: 0; }
+body { font-family: "ZR Body", "AnthropicSerif", Georgia, serif; font-weight: 400; font-size: 22px; line-height: 1.6; -webkit-font-smoothing: antialiased; font-variant-numeric: lining-nums; }
+.markdown-body { box-sizing: border-box; max-width: 88ch; margin: 0 auto; padding: 2em 2.4em 3em; }
+h1, h2, h3, h4, h5, h6 { font-family: "ZR Title", "GT Sectra LCG", Georgia, serif; font-style: italic; font-weight: 400; letter-spacing: -0.005em; line-height: 1.18; color: var(--zr-ink); margin: 1.5em 0 0.5em; }
+h1 { font-size: 2.400em; margin-top: 0.4em; text-align: left; }
+h2 { font-size: 2.000em; }
+h3 { font-size: 1.667em; } h4 { font-size: 1.389em; color: var(--zr-muted); } h5 { font-size: 1.050em; } h6 { font-size: 1.000em; color: var(--zr-muted); }
+p, ul, ol, table, pre, blockquote { margin: 0 0 1em; }
+a { color: var(--zr-accent); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--zr-accent) 35%, transparent); }
+a:hover { border-bottom-color: var(--zr-accent); }
+strong { font-weight: 700; } em { font-style: italic; }
+blockquote { margin-left: 0; margin-right: 0; background: var(--zr-block); padding: 0.9em 1.2em; border-radius: var(--zr-radius); border: 1px solid var(--zr-rule); box-shadow: 0 6px 22px -14px rgba(0,0,0,0.35); }
+blockquote p:last-child { margin-bottom: 0; }
+code, pre, kbd, tt { font-family: "ZR Mono", "AnthropicMono", ui-monospace, monospace; font-size: 0.86em; }
+code { background: var(--zr-block); padding: 0.12em 0.38em; border-radius: calc(var(--zr-radius) * 0.5); }
+pre { background: var(--zr-block) !important; border: 1px solid var(--zr-rule); border-radius: var(--zr-radius); padding: 1em 1.2em; overflow-x: auto; line-height: 1.5; }
+pre code { background: none; padding: 0; font-size: 1em; }
+.hl.kwa, .hl.kwb { color: var(--zr-accent); } .hl.kwd { color: var(--zr-ink); font-weight: 700; } .hl.num, .hl.str, .hl.sng { color: color-mix(in srgb, var(--zr-accent) 70%, var(--zr-ink)); } .hl.slc, .hl.com { color: var(--zr-muted); font-style: italic; } .hl.opt { color: var(--zr-muted); }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { border-bottom: 1px solid var(--zr-rule); padding: 0.5em 0.8em; text-align: left; }
+th { font-family: "ZR UI", "Inter Variable", -apple-system, sans-serif; font-weight: 400; font-size: 0.78em; letter-spacing: 0.04em; text-transform: uppercase; color: var(--zr-muted); border-bottom: 1.5px solid var(--zr-ink); }
+tbody tr:nth-child(even) td { background: var(--zr-block); }
+hr { border: none; border-top: 1px solid var(--zr-rule); margin: 2.2em 0; }
+ul, ol { padding-left: 1.4em; } li { margin: 0.25em 0; } li::marker { color: var(--zr-accent); }
+li:has(> input[type="checkbox"]) { list-style: none; margin-left: -1.3em; }
+input[type="checkbox"] { accent-color: var(--zr-accent); margin-right: 0.45em; transform: translateY(0.08em); }
+img { max-width: 100%; border-radius: var(--zr-radius); }
+.footnotes { font-size: 0.85em; color: var(--zr-muted); border-top: 1px solid var(--zr-rule); margin-top: 2.5em; padding-top: 0.6em; }
+sup { line-height: 0; }

@@ -1,0 +1,49 @@
+#!/usr/bin/env node
+// BuildThemes.mjs, 25 October 2026 14:25. Build the three QLMarkdown themes from ThemeEngine.js.
+// FR : construit les trois thèmes depuis ThemeEngine.js, avec params.json s'il existe.
+// Usage:
+//   node Scripts/BuildThemes.mjs                 write themes/*.css in the workshop
+//   node Scripts/BuildThemes.mjs --install       also copy them into QLMarkdown (Claude themes untouched)
+//   node Scripts/BuildThemes.mjs --activate B    also make theme B the active QLMarkdown theme
+import fs from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
+import { execFileSync } from 'node:child_process';
+
+const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
+const QL_THEMES = path.join(os.homedir(), 'Library/Application Support/QLMarkdown/themes');
+const QL_GROUP = path.join(os.homedir(), 'Library/Group Containers/group.org.sbarex.qlmarkdown/Library');
+const QL_STYLES = path.join(QL_GROUP, 'Application Support/styles');
+const QL_PREFS = path.join(QL_GROUP, 'Preferences/group.org.sbarex.qlmarkdown');
+
+const args = process.argv.slice(2);
+const install = args.includes('--install') || args.includes('--activate');
+const activate = args.includes('--activate') ? args[args.indexOf('--activate') + 1] : null;
+
+const ZRQL = new Function(fs.readFileSync(path.join(ROOT, 'ThemeEngine.js'), 'utf8') + '\nreturn ZRQL;')();
+const paramsFile = path.join(ROOT, 'params.json');
+const overrides = fs.existsSync(paramsFile) ? JSON.parse(fs.readFileSync(paramsFile, 'utf8')) : {};
+if (activate && !ZRQL.DESIGNS[activate]) throw new Error(`--activate expects A, B or C, got "${activate}"`);
+
+fs.mkdirSync(path.join(ROOT, 'themes'), { recursive: true });
+for (const [id, d] of Object.entries(ZRQL.DESIGNS)) {
+  const p = { ...d.params, ...(overrides[id] || {}) };
+  for (const s of ZRQL.SPEC) if (p[s.key] === undefined) throw new Error(`${id}: missing parameter ${s.key}`);
+  const css = ZRQL.css(d, p);
+  const out = path.join(ROOT, 'themes', d.file);
+  fs.writeFileSync(out, css);
+  console.log(`built ${out} (${css.length} bytes${overrides[id] ? ', params.json' : ', defaults'})`);
+  if (install) {
+    fs.mkdirSync(QL_THEMES, { recursive: true });
+    fs.copyFileSync(out, path.join(QL_THEMES, d.file));
+    const link = path.join(QL_STYLES, d.file);
+    if (!fs.existsSync(link)) fs.symlinkSync(path.join(QL_THEMES, d.file), link);
+    console.log(`installed ${path.join(QL_THEMES, d.file)}`);
+  }
+}
+if (activate) {
+  const file = ZRQL.DESIGNS[activate].file;
+  execFileSync('defaults', ['write', QL_PREFS, 'customCSS', '-string', file]);
+  execFileSync('defaults', ['write', QL_PREFS, 'customCSSOverride', '-bool', 'true']);
+  console.log(`active QLMarkdown theme: ${execFileSync('defaults', ['read', QL_PREFS, 'customCSS']).toString().trim()}`);
+}

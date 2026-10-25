@@ -1,0 +1,153 @@
+// ThemeEngine.js, 25 October 2026 14:05. One definition, three instances (HDA law).
+// The page (index.html) and Scripts/BuildThemes.mjs both read this file, so a theme seen in the
+// page is byte for byte the theme installed in QLMarkdown.
+// FR : une seule définition, trois instances ; la page et le script d'installation lisent ce fichier.
+var ZRQL = (function () {
+  // Parameter interface: 4 categories, 8 parameters at most each, most important first.
+  // FR : interface de paramètres, 4 catégories, 8 au plus chacune, les plus importantes d'abord.
+  var SPEC = [
+    { cat: 'Typographie', key: 'baseSize', label: 'Taille du corps', unit: 'px', min: 14, max: 30, step: 1 },
+    { cat: 'Typographie', key: 'lineHeight', label: 'Interligne', unit: '', min: 1.3, max: 2.0, step: 0.05 },
+    { cat: 'Typographie', key: 'h1Scale', label: 'Taille du titre h1', unit: 'em', min: 1.4, max: 3.4, step: 0.05 },
+    { cat: 'Typographie', key: 'titleRatio', label: 'Écart entre niveaux de titre', unit: '', min: 1.05, max: 1.45, step: 0.01 },
+    { cat: 'Typographie', key: 'titleStyle', label: 'Style des titres', type: 'select', options: ['italic', 'normal'] },
+    { cat: 'Typographie', key: 'titleTracking', label: 'Approche des titres', unit: 'em', min: -0.04, max: 0.04, step: 0.005 },
+    { cat: 'Mise en page', key: 'measure', label: 'Largeur de lecture (0 = pleine)', unit: 'ch', min: 0, max: 110, step: 1 },
+    { cat: 'Mise en page', key: 'padX', label: 'Marge latérale', unit: 'em', min: 0.6, max: 5, step: 0.1 },
+    { cat: 'Mise en page', key: 'radius', label: 'Arrondi des blocs', unit: 'px', min: 0, max: 22, step: 1 },
+    { cat: 'Mise en page', key: 'h1Align', label: 'Alignement du h1', type: 'select', options: ['left', 'center'] },
+    { cat: 'Mise en page', key: 'h2Rule', label: 'Filet sous les h2', type: 'select', options: ['on', 'off'] },
+    { cat: 'Mise en page', key: 'quoteStyle', label: 'Citations', type: 'select', options: ['bar', 'card', 'italic'] },
+    { cat: 'Mise en page', key: 'tableStripes', label: 'Lignes alternées', type: 'select', options: ['on', 'off'] },
+    { cat: 'Mise en page', key: 'h1Accent', label: 'h1 en couleur d’accent', type: 'select', options: ['on', 'off'] },
+    { cat: 'Couleurs clair', key: 'bg', label: 'Fond', type: 'color' },
+    { cat: 'Couleurs clair', key: 'ink', label: 'Texte', type: 'color' },
+    { cat: 'Couleurs clair', key: 'muted', label: 'Texte secondaire', type: 'color' },
+    { cat: 'Couleurs clair', key: 'accent', label: 'Accent', type: 'color' },
+    { cat: 'Couleurs clair', key: 'rule', label: 'Filets', type: 'color' },
+    { cat: 'Couleurs clair', key: 'block', label: 'Fond des blocs', type: 'color' },
+    { cat: 'Couleurs sombre', key: 'dBg', label: 'Fond', type: 'color' },
+    { cat: 'Couleurs sombre', key: 'dInk', label: 'Texte', type: 'color' },
+    { cat: 'Couleurs sombre', key: 'dMuted', label: 'Texte secondaire', type: 'color' },
+    { cat: 'Couleurs sombre', key: 'dAccent', label: 'Accent', type: 'color' },
+    { cat: 'Couleurs sombre', key: 'dRule', label: 'Filets', type: 'color' },
+    { cat: 'Couleurs sombre', key: 'dBlock', label: 'Fond des blocs', type: 'color' }
+  ];
+
+  // Three instances. Defaults are the delivered result. FR : trois instances, défauts = résultat livré.
+  var DESIGNS = {
+    A: {
+      id: 'A', file: 'ZenRay-A-Ivoire.css', name: 'Ivoire',
+      pitch: 'Le thème Claude actuel, gardé dans sa couleur, avec les titres en GT Sectra italique et un corps plus calme.',
+      params: {
+        baseSize: 22, lineHeight: 1.65, h1Scale: 2.2, titleRatio: 1.22, titleStyle: 'italic', titleTracking: -0.01,
+        measure: 0, padX: 2.6, radius: 10, h1Align: 'left', h2Rule: 'on', quoteStyle: 'bar', tableStripes: 'on', h1Accent: 'on',
+        bg: '#F5F4EE', ink: '#1F1E1C', muted: '#6B6961', accent: '#C15F3C', rule: '#E0DDD2', block: '#ECEAE0',
+        dBg: '#262624', dInk: '#ECE9E2', dMuted: '#A8A49A', dAccent: '#E0805F', dRule: '#3B3A36', dBlock: '#1E1D1B'
+      }
+    },
+    B: {
+      id: 'B', file: 'ZenRay-B-Papier.css', name: 'Papier éditorial',
+      pitch: 'Une page de livre : colonne de lecture étroite et centrée, encre presque noire, filets fins, accent bordeaux discret.',
+      params: {
+        baseSize: 21, lineHeight: 1.7, h1Scale: 2.8, titleRatio: 1.28, titleStyle: 'italic', titleTracking: -0.015,
+        measure: 68, padX: 2.2, radius: 2, h1Align: 'center', h2Rule: 'off', quoteStyle: 'italic', tableStripes: 'off', h1Accent: 'off',
+        bg: '#FBFAF7', ink: '#161514', muted: '#76716A', accent: '#8A2F22', rule: '#E4E0D8', block: '#F3F1EC',
+        dBg: '#1A1918', dInk: '#E9E5DE', dMuted: '#9A948B', dAccent: '#D98A7A', dRule: '#34312D', dBlock: '#232120'
+      }
+    },
+    C: {
+      id: 'C', file: 'ZenRay-C-Graphite.css', name: 'Graphite',
+      pitch: 'Une note d’atelier moderne : gris froid, bleu du site, blocs en cartes arrondies, pensée d’abord pour le mode sombre.',
+      params: {
+        baseSize: 22, lineHeight: 1.6, h1Scale: 2.4, titleRatio: 1.2, titleStyle: 'italic', titleTracking: -0.005,
+        measure: 88, padX: 2.4, radius: 16, h1Align: 'left', h2Rule: 'off', quoteStyle: 'card', tableStripes: 'on', h1Accent: 'off',
+        bg: '#F2F3F5', ink: '#15171A', muted: '#62666E', accent: '#4371EE', rule: '#DDE0E5', block: '#FFFFFF',
+        dBg: '#16171A', dInk: '#E8EAEE', dMuted: '#959AA3', dAccent: '#7FA2FF', dRule: '#2C2F35', dBlock: '#1F2125'
+      }
+    }
+  };
+
+  // Font faces. Titles use one family made of two faces: digits and euro from Anthropic Serif
+  // upright, every other glyph from GT Sectra LCG. local() names are PostScript names measured
+  // with fc-scan on 25 October 2026; url() is only used by the preview page.
+  // FR : les chiffres d'un titre restent droits en Anthropic Serif, par unicode-range.
+  function fonts(withUrls) {
+    function src(ps, file) { return 'local("' + ps + '")' + (withUrls ? ', url("fonts/' + file + '")' : ''); }
+    var digits = 'U+0030-0039, U+0025, U+20AC, U+00A0, U+202F';
+    return [
+      ['ZR Title', 'italic', src('GTSectraLCG-RegularItalic', 'GT-Sectra-LCGV-Regular-Italic.woff2'), ''],
+      ['ZR Title', 'normal', src('GTSectraLCG-Regular', 'GT-Sectra-LCGV-Regular.woff2'), ''],
+      ['ZR Title', 'italic', src('AnthropicSerif-Regular', 'AnthropicSerif-Regular.ttf'), digits],
+      ['ZR Title', 'normal', src('AnthropicSerif-Regular', 'AnthropicSerif-Regular.ttf'), digits],
+      ['ZR Body', 'normal', src('AnthropicSerif-Regular', 'AnthropicSerif-Regular.ttf'), ''],
+      ['ZR Body', 'italic', src('AnthropicSerif-Italic', 'AnthropicSerif-Italics.woff2'), ''],
+      ['ZR Mono', 'normal', src('AnthropicMono-Regular', 'AnthropicMono-Regular.ttf'), ''],
+      ['ZR UI', 'normal', src('InterVariable', 'InterVariable.woff2'), '']
+    ].map(function (f) {
+      return '@font-face { font-family: "' + f[0] + '"; font-style: ' + f[1] + '; font-weight: 400; src: ' + f[2] + ';' +
+        (f[3] ? ' unicode-range: ' + f[3] + ';' : '') + ' }';
+    }).join('\n');
+  }
+
+  function palette(p, dark) {
+    var k = dark ? ['dBg', 'dInk', 'dMuted', 'dAccent', 'dRule', 'dBlock'] : ['bg', 'ink', 'muted', 'accent', 'rule', 'block'];
+    return '  --zr-bg: ' + p[k[0]] + '; --zr-ink: ' + p[k[1]] + '; --zr-muted: ' + p[k[2]] + ';\n' +
+      '  --zr-accent: ' + p[k[3]] + '; --zr-rule: ' + p[k[4]] + '; --zr-block: ' + p[k[5]] + ';';
+  }
+
+  // scheme: 'auto' writes the prefers-color-scheme media query (installed theme);
+  // 'light' or 'dark' forces one palette (preview). FR : 'auto' pour QLMarkdown, forcé pour l'aperçu.
+  function css(design, p, opts) {
+    opts = opts || {};
+    var scheme = opts.scheme || 'auto';
+    var r = p.titleRatio, h1 = p.h1Scale;
+    var sizes = [h1, h1 / r, h1 / r / r, h1 / r / r / r, 1.05, 1].map(function (v) { return Math.max(v, 1).toFixed(3) + 'em'; });
+    var measure = Number(p.measure) > 0 ? p.measure + 'ch' : 'none';
+    var quote = {
+      bar: 'border-left: 3px solid var(--zr-accent); background: var(--zr-block); padding: 0.6em 1.1em; border-radius: 0 var(--zr-radius) var(--zr-radius) 0; color: var(--zr-muted);',
+      card: 'background: var(--zr-block); padding: 0.9em 1.2em; border-radius: var(--zr-radius); border: 1px solid var(--zr-rule); box-shadow: 0 6px 22px -14px rgba(0,0,0,0.35);',
+      italic: 'font-style: italic; font-size: 1.12em; color: var(--zr-muted); padding: 0 1.6em; border: none; text-align: center;'
+    }[p.quoteStyle];
+    var out = [];
+    out.push('/* ' + design.file + ' : thème QLMarkdown ZenRay ' + design.id + ' (' + design.name + '), généré le ' + (opts.date || '25 October 2026') + ' par ThemeEngine.js.');
+    out.push('   Modifier les valeurs dans la page index.html de l’atelier, puis Scripts/BuildThemes.mjs --install. */');
+    out.push(fonts(!!opts.withUrls));
+    out.push(':root {\n' + palette(p, scheme === 'dark') + '\n  --zr-radius: ' + p.radius + 'px;\n  color-scheme: ' + (scheme === 'auto' ? 'light dark' : scheme) + ';\n}');
+    if (scheme === 'auto') out.push('@media (prefers-color-scheme: dark) {\n  :root {\n' + palette(p, true) + '\n  }\n}');
+    out.push([
+      'html, body { background: var(--zr-bg) !important; color: var(--zr-ink); margin: 0; }',
+      'body { font-family: "ZR Body", "AnthropicSerif", Georgia, serif; font-weight: 400; font-size: ' + p.baseSize + 'px; line-height: ' + p.lineHeight + '; -webkit-font-smoothing: antialiased; font-variant-numeric: lining-nums; }',
+      '.markdown-body { box-sizing: border-box; max-width: ' + measure + '; margin: 0 auto; padding: 2em ' + p.padX + 'em 3em; }',
+      'h1, h2, h3, h4, h5, h6 { font-family: "ZR Title", "GT Sectra LCG", Georgia, serif; font-style: ' + p.titleStyle + '; font-weight: 400; letter-spacing: ' + p.titleTracking + 'em; line-height: 1.18; color: var(--zr-ink); margin: 1.5em 0 0.5em; }',
+      'h1 { font-size: ' + sizes[0] + '; margin-top: 0.4em; text-align: ' + p.h1Align + ';' + (p.h1Accent === 'on' ? ' color: var(--zr-accent);' : '') + ' }',
+      'h2 { font-size: ' + sizes[1] + ';' + (p.h2Rule === 'on' ? ' padding-bottom: 0.25em; border-bottom: 1px solid var(--zr-rule);' : '') + ' }',
+      'h3 { font-size: ' + sizes[2] + '; } h4 { font-size: ' + sizes[3] + '; color: var(--zr-muted); } h5 { font-size: ' + sizes[4] + '; } h6 { font-size: ' + sizes[5] + '; color: var(--zr-muted); }',
+      'p, ul, ol, table, pre, blockquote { margin: 0 0 1em; }',
+      'a { color: var(--zr-accent); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--zr-accent) 35%, transparent); }',
+      'a:hover { border-bottom-color: var(--zr-accent); }',
+      'strong { font-weight: 700; } em { font-style: italic; }',
+      'blockquote { margin-left: 0; margin-right: 0; ' + quote + ' }',
+      'blockquote p:last-child { margin-bottom: 0; }',
+      'code, pre, kbd, tt { font-family: "ZR Mono", "AnthropicMono", ui-monospace, monospace; font-size: 0.86em; }',
+      'code { background: var(--zr-block); padding: 0.12em 0.38em; border-radius: calc(var(--zr-radius) * 0.5); }',
+      'pre { background: var(--zr-block) !important; border: 1px solid var(--zr-rule); border-radius: var(--zr-radius); padding: 1em 1.2em; overflow-x: auto; line-height: 1.5; }',
+      'pre code { background: none; padding: 0; font-size: 1em; }',
+      '.hl.kwa, .hl.kwb { color: var(--zr-accent); } .hl.kwd { color: var(--zr-ink); font-weight: 700; } .hl.num, .hl.str, .hl.sng { color: color-mix(in srgb, var(--zr-accent) 70%, var(--zr-ink)); } .hl.slc, .hl.com { color: var(--zr-muted); font-style: italic; } .hl.opt { color: var(--zr-muted); }',
+      'table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }',
+      'th, td { border-bottom: 1px solid var(--zr-rule); padding: 0.5em 0.8em; text-align: left; }',
+      'th { font-family: "ZR UI", "Inter Variable", -apple-system, sans-serif; font-weight: 400; font-size: 0.78em; letter-spacing: 0.04em; text-transform: uppercase; color: var(--zr-muted); border-bottom: 1.5px solid var(--zr-ink); }',
+      p.tableStripes === 'on' ? 'tbody tr:nth-child(even) td { background: var(--zr-block); }' : '',
+      'hr { border: none; border-top: 1px solid var(--zr-rule); margin: 2.2em 0; }',
+      'ul, ol { padding-left: 1.4em; } li { margin: 0.25em 0; } li::marker { color: var(--zr-accent); }',
+      'li:has(> input[type="checkbox"]) { list-style: none; margin-left: -1.3em; }',
+      'input[type="checkbox"] { accent-color: var(--zr-accent); margin-right: 0.45em; transform: translateY(0.08em); }',
+      'img { max-width: 100%; border-radius: var(--zr-radius); }',
+      '.footnotes { font-size: 0.85em; color: var(--zr-muted); border-top: 1px solid var(--zr-rule); margin-top: 2.5em; padding-top: 0.6em; }',
+      'sup { line-height: 0; }'
+    ].filter(Boolean).join('\n'));
+    return out.join('\n') + '\n';
+  }
+
+  return { SPEC: SPEC, DESIGNS: DESIGNS, css: css };
+})();

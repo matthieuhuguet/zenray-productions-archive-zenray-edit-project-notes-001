@@ -1,0 +1,79 @@
+<body>
+<article class='markdown-body'>
+<h1 id="plan-du-26-october-2026">Plan du 26 October 2026</h1>
+<p>Ce document sert d’<strong>échantillon</strong> pour comparer les thèmes de <em>QLMarkdown</em>. Un lien vers <a href="https://matthieuhuguet.com">matthieuhuguet.com</a> et du <code>code en ligne</code>.</p>
+<h2 id="1-prospection-dabord">1. Prospection d’abord</h2>
+<p>Dix à cent mails aux studios, puis la production, puis la facture. Le corps du texte reste en Anthropic Serif Regular, les titres passent en GT Sectra LCG italique, et les chiffres comme 10 000 € restent droits.</p>
+<blockquote>
+<p>La liberté se gagne d’abord par la rentrée d’argent ; le reste suit.</p>
+</blockquote>
+<h3 id="tâches-du-jour">Tâches du jour</h3>
+<ul>
+<li><input type="checkbox" checked="" disabled="" /> Envoyer 40 mails</li>
+<li><input type="checkbox" disabled="" /> Relancer Asobo</li>
+<li><input type="checkbox" disabled="" /> Facturer la mission 03</li>
+</ul>
+<ol>
+<li>Prospecter</li>
+<li>Produire</li>
+<li>Être payé</li>
+</ol>
+<h2 id="2-tableau-des-chiffres">2. Tableau des chiffres</h2>
+<table>
+<thead>
+<tr>
+<th>Semaine</th>
+<th>Mails</th>
+<th>Réponses</th>
+<th>CA (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>44</td>
+<td>280</td>
+<td>6</td>
+<td>0</td>
+</tr>
+<tr>
+<td>45</td>
+<td>500</td>
+<td>14</td>
+<td>2 400</td>
+</tr>
+<tr>
+<td>46</td>
+<td>700</td>
+<td>21</td>
+<td>6 800</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-code">3. Code</h2>
+<pre class='hl'><code class="language-python"><span class="hl slc"># Count replies per week. FR : compter les réponses par semaine.</span>
+<span class="hl kwa">def</span> <span class="hl kwd">reply_rate</span><span class="hl opt">(</span>mails<span class="hl opt">:</span> <span class="hl kwb">int</span><span class="hl opt">,</span> replies<span class="hl opt">:</span> <span class="hl kwb">int</span><span class="hl opt">) -&gt;</span> <span class="hl kwb">float</span><span class="hl opt">:</span>
+    <span class="hl kwa">return</span> replies <span class="hl opt">/</span> mails <span class="hl kwa">if</span> mails <span class="hl kwa">else</span> <span class="hl num">0.0</span>
+</code></pre>
+<hr />
+<h4 id="note-de-bas-de-page">Note de bas de page</h4>
+<p>Une référence<sup class="footnote-ref"><a href="#fn-1" id="fnref-1" data-footnote-ref>1</a></sup> pour vérifier le rendu.</p>
+<section class="footnotes" data-footnotes>
+<ol>
+<li id="fn-1">
+<p>QLMarkdown 1.5.1, extension Quick Look de sbarex. <a href="#fnref-1" class="footnote-backref" data-footnote-backref data-footnote-backref-idx="1" aria-label="Back to reference 1">↩</a></p>
+</li>
+</ol>
+</section>
+<div style='font-size: 72%; margin-top: 1.5em; padding-top: .5em; -webkit-user-select: none;'><hr style='height: 0; border: none; border-top: 1px solid rgba(0,0,0,.5); box-shadow: 0 1px 1px rgba(255, 255, 255, .5)'/><a href='https://github.com/sbarex/QLMarkdown'>QLMarkdown</a>.<br/>
+If you like this app, <a href='https://www.buymeacoffee.com/sbarex'><strong>buy me a coffee</strong></a>!</div>
+
+</article>
+
+<!--
+
+File generated with QLMarkdown [https://github.com/sbarex/QLMarkdown] - QLMarkdown
+
+-->
+
+</body>
+</html>

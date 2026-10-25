@@ -1,0 +1,43 @@
+# Plan du 26 October 2026
+
+Ce document sert d'**échantillon** pour comparer les thèmes de *QLMarkdown*. Un lien vers [matthieuhuguet.com](https://matthieuhuguet.com) et du `code en ligne`.
+
+## 1. Prospection d'abord
+
+Dix à cent mails aux studios, puis la production, puis la facture. Le corps du texte reste en Anthropic Serif Regular, les titres passent en GT Sectra LCG italique, et les chiffres comme 10 000 € restent droits.
+
+> La liberté se gagne d'abord par la rentrée d'argent ; le reste suit.
+
+### Tâches du jour
+
+- [x] Envoyer 40 mails
+- [ ] Relancer Asobo
+- [ ] Facturer la mission 03
+
+1. Prospecter
+2. Produire
+3. Être payé
+
+## 2. Tableau des chiffres
+
+| Semaine | Mails | Réponses | CA (€) |
+|---|---|---|---|
+| 44 | 280 | 6 | 0 |
+| 45 | 500 | 14 | 2 400 |
+| 46 | 700 | 21 | 6 800 |
+
+## 3. Code
+
+```python
+# Count replies per week. FR : compter les réponses par semaine.
+def reply_rate(mails: int, replies: int) -> float:
+    return replies / mails if mails else 0.0
+```
+
+---
+
+#### Note de bas de page
+
+Une référence[^1] pour vérifier le rendu.
+
+[^1]: QLMarkdown 1.5.1, extension Quick Look de sbarex.
