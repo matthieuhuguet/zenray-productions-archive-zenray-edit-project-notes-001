@@ -27,3 +27,10 @@
 - Project: zenray-edit; kind: rule. (23 October 2026, 19:59:22 +0200)
 
 > 23 October 2026 : titres d'article en GT Sectra LCG italique par défaut (titleStyle), chiffres et corps droits ; règle courante dans rules/Typography1.md, section 18:20. (23 October 2026, 19:59:22 +0200)
+
+## 25 October 2026, 14:40:11 +0100 : Standing rule
+
+<!-- feedback-event:898fe4904bde21f7f845fb2bffa0389d65d5ffd11ebafc476ce23b4f01eee48b (25 October 2026, 14:40:11 +0100) -->
+- Project: zenray-edit; kind: rule. (25 October 2026, 14:40:11 +0100)
+
+> Toute réponse zenray-edit finit par le chemin absolu complet du HTML autonome des propositions côte à côte, ouvrable dans le Finder, même quand le design vit dans une app ; je l'ouvre aussi dans le navigateur interne (25 October 2026) (25 October 2026, 14:40:11 +0100)
