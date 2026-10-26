@@ -14,3 +14,7 @@
 
 - The canonical media workshop becomes ~/.claude/skills/zenray-edit ; original methods and resources are preserved in its historical references and immutable source archive. Text edits preserve wording, order and repetitions by default. (7 October 2026)
 - This is a separate Assets project, cloud folder pages/ZenRayAssets/zenray-edit. The present Codex session remains bound to zenray-assets-v2 ; Edit results are recorded explicitly without inventing another binding. (7 October 2026)
+
+## 26 October 2026 : l'app ZenRay Edit (index mapping Motion + SFX)
+
+- 26 October 2026 : dépôt `ZenRayEdit` (port 3130) : index de tout ce qu'un montage peut utiliser (83 projets Motion, sons SFX, liens film-son) construit par `Scripts/BuildIndex.py`, vérifié par `Scripts/CheckIndex.py` (vert et rouge), lisible par un agent dans `out/Library.md`. Les liens film-son vivent dans `sfx.json` à côté de chaque projet Motion. Les galeries de l'app Motion (`/motion/gallery`, `/motion/gallery-sfx`) sont la vue de consultation ; ZenRay Edit reste la vue de liaison. (26 October 2026)
