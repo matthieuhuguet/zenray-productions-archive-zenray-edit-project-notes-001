@@ -135,3 +135,32 @@
 > |---|---|---| (28 October 2026, 20:41:56 +0100)
 > | « GT Ultra Only » | Oui | Le troisième choix est sélectionné dans le navigateur. | (28 October 2026, 20:41:56 +0100)
 > | Archivage de la maquette | En cours | Le fichier est enregistré et poussé sur Git; la confirmation de la galerie cloud est encore en attente. | (28 October 2026, 20:41:56 +0100)
+
+## 28 October 2026, 20:44:33 +0100 : Prompt
+
+<!-- feedback-event:d86abd85b1fdb9e027363e7bf671eedbda916ae92923ba667753c3ed2c0c1910 (28 October 2026, 20:44:33 +0100) -->
+- Project: zenray-edit; kind: prompt. (28 October 2026, 20:44:33 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (28 October 2026, 20:44:33 +0100)
+
+> ## My request: (28 October 2026, 20:44:33 +0100)
+> Testons-en une autre avec les titres en GT Walsheim et le reste en GT Ultra, puis l'inversement. (28 October 2026, 20:44:33 +0100)
+
+## 28 October 2026, 20:45:24 +0100 : Iteration
+
+<!-- feedback-event:e0d99bee17e25b2295c2100e46eed318dec41a56fa782bcb795cb3f23d2c6a8c (28 October 2026, 20:45:24 +0100) -->
+- Project: zenray-edit; kind: iteration. (28 October 2026, 20:45:24 +0100)
+- Source: checkpoint:codex:01a183ee-37b7-7c60-a028-d9f9a184591a. (28 October 2026, 20:45:24 +0100)
+
+> Deux choix ajoutés à la sidebar pour inverser GT Walsheim et GT Ultra entre sections et modules; les deux sont sélectionnables. Prochain geste : comparer les variantes. (28 October 2026, 20:45:24 +0100)
+
+## 28 October 2026, 20:45:38 +0100 : Iteration
+
+<!-- feedback-event:799a1de66c9aab4d6ff9f5cd9a7979746fd5466f503e44b0dd6a411666c8e31d (28 October 2026, 20:45:38 +0100) -->
+- Project: zenray-edit; kind: iteration. (28 October 2026, 20:45:38 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (28 October 2026, 20:45:38 +0100)
+
+> Les deux combinaisons sont ajoutées au sélecteur et vérifiées dans la page : **GT Walsheim pour les titres avec GT Ultra pour les modules**, puis l’inverse. (28 October 2026, 20:45:38 +0100)
+>
+> [Ouvrir le HTML mis à jour](/Users/zenray/.claude/tmp/tmp-zenray-edit/tmp-sidebar-literata-gt-standard-28-October-2026/index.html) (28 October 2026, 20:45:38 +0100)
+>
+> La nouvelle version est enregistrée et poussée sur Git. Sa présence dans la galerie cloud reste en cours de vérification. (28 October 2026, 20:45:38 +0100)
