@@ -49,3 +49,40 @@
 >
 >
 > refais moi aussi un html avec la comparaison de toutes les fonts grilli type (il y en a 21 je crois) depuis mon font book ajoute literata inter anthropic serif sans et mono (28 October 2026, 20:13:11 +0100)
+
+## 28 October 2026, 20:28:53 +0100 : Iteration
+
+<!-- feedback-event:785e4546e00a673995abd913bf680e1431539825ad99d4fbf64312fb04f48e86 (28 October 2026, 20:28:53 +0100) -->
+- Project: zenray-edit; kind: iteration. (28 October 2026, 20:28:53 +0100)
+- Source: checkpoint:codex:01a183ee-37b7-7c60-a028-d9f9a184591a. (28 October 2026, 20:28:53 +0100)
+
+> Reprise de la maquette sidebar Literata et GT Standard, puis création d’un comparatif des 21 familles Grilli Type avec Literata, Inter et Anthropic Serif, Sans et Mono. Les deux HTML et miniatures sont enregistrés; les deux pages sont confirmées dans la galerie cloud. Commit 327e42b01 poussé sur main. Prochain geste : ouvrir les deux HTML locaux et choisir les ajustements visuels. (28 October 2026, 20:28:53 +0100)
+
+## 28 October 2026, 20:30:41 +0100 : Iteration
+
+<!-- feedback-event:6003787065eb03c3b928f227d8377071206454d657678a563501ddf98dd76e9b (28 October 2026, 20:30:41 +0100) -->
+- Project: zenray-edit; kind: iteration. (28 October 2026, 20:30:41 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (28 October 2026, 20:30:41 +0100)
+
+> Voici les deux maquettes : (28 October 2026, 20:30:41 +0100)
+>
+> - [Sidebar Literata et GT Standard](/Users/zenray/.claude/tmp/tmp-zenray-edit/tmp-sidebar-literata-gt-standard-28-October-2026/index.html) (28 October 2026, 20:30:41 +0100)
+> - [Comparatif des fontes Font Book](/Users/zenray/.claude/tmp/tmp-zenray-edit/tmp-fontbook-grilli-type-28-October-2026/index.html) (28 October 2026, 20:30:41 +0100)
+>
+> Le comparatif présente 21 familles Grilli Type et les cinq fontes ajoutées, soit 26 au total. J’ai regroupé les variantes linguistiques de GT America. GT Pressura reste à part, car ses métadonnées locales ne l’attribuent pas à Grilli Type. Les deux fichiers sont confirmés dans la galerie cloud et les commits sont poussés. Le checkpoint Assets est enregistré localement, sans confirmation de sauvegarde cloud. (28 October 2026, 20:30:41 +0100)
+>
+> Formulation courte : « Reprends la sidebar du 26 October et compare les 21 familles Grilli Type avec les cinq fontes ajoutées. » Une famille regroupe une police et ses variantes. (28 October 2026, 20:30:41 +0100)
+>
+> | Ce que tu voulais | Fait | Comment je le sais | (28 October 2026, 20:30:41 +0100)
+> |---|---|---| (28 October 2026, 20:30:41 +0100)
+> | « reprends ce html » | Oui | [La sidebar](</Users/zenray/.claude/tmp/tmp-zenray-edit/tmp-sidebar-literata-gt-standard-28-October-2026/index.html>) est ouverte et archivée dans la galerie cloud. | (28 October 2026, 20:30:41 +0100)
+> | « refais moi aussi un html avec la comparaison » | Oui | [Le comparatif](</Users/zenray/.claude/tmp/tmp-zenray-edit/tmp-fontbook-grilli-type-28-October-2026/index.html>) affiche 26 familles; la galerie cloud confirme les fichiers. | (28 October 2026, 20:30:41 +0100)
+
+## 28 October 2026, 20:34:24 +0100 : Prompt
+
+<!-- feedback-event:51d60dd17e9fb1d47c4557bf6ce205ba718ead25e3eeaf1d4a696242febfe177 (28 October 2026, 20:34:24 +0100) -->
+- Project: zenray-edit; kind: prompt. (28 October 2026, 20:34:24 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (28 October 2026, 20:34:24 +0100)
+
+> ## My request: (28 October 2026, 20:34:24 +0100)
+> Pour la sidebar de gauche, j'aimerais tester GT Ultra en titre des sections et l'iterata dans les petits modules et ensuite faire inversement avec un toggle directement dans le fichier HTML. (28 October 2026, 20:34:24 +0100)
