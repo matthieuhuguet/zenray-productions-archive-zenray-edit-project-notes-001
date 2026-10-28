@@ -86,3 +86,52 @@
 
 > ## My request: (28 October 2026, 20:34:24 +0100)
 > Pour la sidebar de gauche, j'aimerais tester GT Ultra en titre des sections et l'iterata dans les petits modules et ensuite faire inversement avec un toggle directement dans le fichier HTML. (28 October 2026, 20:34:24 +0100)
+
+## 28 October 2026, 20:39:37 +0100 : Prompt
+
+<!-- feedback-event:2ee1f881997e53feb53795da2af2cabf63bd6495716c44a8eb9eaae8841b28f6 (28 October 2026, 20:39:37 +0100) -->
+- Project: zenray-edit; kind: prompt. (28 October 2026, 20:39:37 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (28 October 2026, 20:39:37 +0100)
+
+> ## My request: (28 October 2026, 20:39:37 +0100)
+> continue (28 October 2026, 20:39:37 +0100)
+
+## 28 October 2026, 20:40:05 +0100 : Iteration
+
+<!-- feedback-event:805dbecb710cfed78ccf44ca556ad436ce484a8e8d8797b48cebd234957b4807 (28 October 2026, 20:40:05 +0100) -->
+- Project: zenray-edit; kind: iteration. (28 October 2026, 20:40:05 +0100)
+- Source: checkpoint:codex:01a183ee-37b7-7c60-a028-d9f9a184591a. (28 October 2026, 20:40:05 +0100)
+
+> La maquette sidebar permet de basculer entre GT Ultra pour les sections et Literata pour les modules, puis la répartition inverse. Les deux positions sont visibles dans le navigateur interne. Prochain geste : comparer les deux propositions. (28 October 2026, 20:40:05 +0100)
+
+## 28 October 2026, 20:40:41 +0100 : Prompt
+
+<!-- feedback-event:cff93434a7069b2bab7967927d5db55222c6bc4130a802d834a5d1e40bac6157 (28 October 2026, 20:40:41 +0100) -->
+- Project: zenray-edit; kind: prompt. (28 October 2026, 20:40:41 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (28 October 2026, 20:40:41 +0100)
+
+> ## My request: (28 October 2026, 20:40:41 +0100)
+> Donne-moi une autre section avec GT Ultra Only. (28 October 2026, 20:40:41 +0100)
+
+## 28 October 2026, 20:41:07 +0100 : Iteration
+
+<!-- feedback-event:ac96c0c57b09803828990dfa1710f332299c59d664dd92227d7c39672cb85a5b (28 October 2026, 20:41:07 +0100) -->
+- Project: zenray-edit; kind: iteration. (28 October 2026, 20:41:07 +0100)
+- Source: checkpoint:codex:01a183ee-37b7-7c60-a028-d9f9a184591a. (28 October 2026, 20:41:07 +0100)
+
+> Troisième choix ajouté à la sidebar : GT Ultra pour les titres et les modules. La sélection est visible dans le navigateur interne. Prochain geste : comparer les trois choix. (28 October 2026, 20:41:07 +0100)
+
+## 28 October 2026, 20:41:56 +0100 : Iteration
+
+<!-- feedback-event:535421af3cce5a4423000a2c17e2936015c3cb8b6542fe2c9b5a0ebd6f19492d (28 October 2026, 20:41:56 +0100) -->
+- Project: zenray-edit; kind: iteration. (28 October 2026, 20:41:56 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (28 October 2026, 20:41:56 +0100)
+
+> Le troisième choix **GT Ultra partout** est ajouté et sélectionné dans la page ouverte. Il applique GT Ultra aux titres de section et aux modules. (28 October 2026, 20:41:56 +0100)
+>
+> [Ouvrir le HTML mis à jour](/Users/zenray/.claude/tmp/tmp-zenray-edit/tmp-sidebar-literata-gt-standard-28-October-2026/index.html) (28 October 2026, 20:41:56 +0100)
+>
+> | Ce que tu voulais | Fait | Comment je le sais | (28 October 2026, 20:41:56 +0100)
+> |---|---|---| (28 October 2026, 20:41:56 +0100)
+> | « GT Ultra Only » | Oui | Le troisième choix est sélectionné dans le navigateur. | (28 October 2026, 20:41:56 +0100)
+> | Archivage de la maquette | En cours | Le fichier est enregistré et poussé sur Git; la confirmation de la galerie cloud est encore en attente. | (28 October 2026, 20:41:56 +0100)
