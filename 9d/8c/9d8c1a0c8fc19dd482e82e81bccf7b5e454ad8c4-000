@@ -164,3 +164,24 @@
 > [Ouvrir le HTML mis à jour](/Users/zenray/.claude/tmp/tmp-zenray-edit/tmp-sidebar-literata-gt-standard-28-October-2026/index.html) (28 October 2026, 20:45:38 +0100)
 >
 > La nouvelle version est enregistrée et poussée sur Git. Sa présence dans la galerie cloud reste en cours de vérification. (28 October 2026, 20:45:38 +0100)
+
+## 28 October 2026, 20:50:10 +0100 : Prompt
+
+<!-- feedback-event:cdab41e2ce7c265141d565e9a4b3fc642de812bb0948321933320742ce09771a (28 October 2026, 20:50:10 +0100) -->
+- Project: zenray-edit; kind: prompt. (28 October 2026, 20:50:10 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (28 October 2026, 20:50:10 +0100)
+
+> ## My request: (28 October 2026, 20:50:10 +0100)
+> Bah, push ces documents de design du coup dans Assets. Vérifie que la vue design de ZenRay Edit, elle fonctionne bien avec les nouvelles modifications à jour. Normalement, ça devrait être logique. Et ensuite, j'aimerais que tu mettes du coup section GT Ultra et module GT Ultra dans la sidebar de gauche et que tu l'appliques sur le code de la page. Et enfin, dans la vue Create, du coup, j'aimerais que pour la fonte, globalement, tu passes tout en GT Ultra. Donc GT Ultra régulier. Et ce sera parfait. Merci beaucoup. (28 October 2026, 20:50:10 +0100)
+>
+> Globalement, les anciennes occurrences de inter sur tout le site de progress passent en GT ultra régular et voilà. Mais normalement, le site était déjà configuré comme un code HDA, c'est-à-dire modulaire. Donc tu as juste à trouver les bonnes valeurs pour changer de manière paramétrique les choses. Mais j'ai pas envie que tu changes tout sur le site. J'ai vraiment envie juste que tu fasses la sidebar de gauche, create. Par exemple, dans ZenRay plan, il y a encore des occurrences de GT standard L. Passe les dernières occurrences de GT standard L en GT ultra. Le reste de la fonte reste literata. L-I-T-E-R-A-T-A pour ZenRay plan uniquement. Et globalement, dans, je sais plus comment ça s'appelle, mais dans le, ah oui, dans Claude.md, dans le fichier typographie et même dans ZenRay Edit, tu peux dire que maintenant, on va plutôt appliquer un combo de GT Ultra plus Literata, plutôt que avoir un trio. On va utiliser un duo plutôt. C'est-à-dire que ma fonte 100, S-A-N-S, ça va plutôt être GT Ultra, tandis que ma fonte Serif, ça va être Literata. (28 October 2026, 20:50:10 +0100)
+>
+> [$tasks-sequence](/Users/zenray/.codex/skills/tasks-sequence/SKILL.md) (28 October 2026, 20:50:10 +0100)
+
+## 28 October 2026, 20:54:59 +0100 : Iteration
+
+<!-- feedback-event:c2abef5aa87c7e8928012724bcbd8dbed512d3768c89d0cd8b0fbe442890d4f4 (28 October 2026, 20:54:59 +0100) -->
+- Project: zenray-edit; kind: iteration. (28 October 2026, 20:54:59 +0100)
+- Source: checkpoint:codex:01a183ee-37b7-7c60-a028-d9f9a184591a. (28 October 2026, 20:54:59 +0100)
+
+> Cinq maquettes sont confirmées dans Assets et la galerie de production ouvre la dernière. Sidebar et Create en GT Ultra, Plan en GT Ultra et Literata; déploiement 505af21f et 29 tests ciblés réussis. Doctrine GT Ultra et Literata synchronisée. Prochain geste : contrôler de nouveau le site dix minutes après déploiement. (28 October 2026, 20:54:59 +0100)
