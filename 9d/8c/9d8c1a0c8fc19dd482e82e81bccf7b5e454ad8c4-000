@@ -185,3 +185,27 @@
 - Source: checkpoint:codex:01a183ee-37b7-7c60-a028-d9f9a184591a. (28 October 2026, 20:54:59 +0100)
 
 > Cinq maquettes sont confirmées dans Assets et la galerie de production ouvre la dernière. Sidebar et Create en GT Ultra, Plan en GT Ultra et Literata; déploiement 505af21f et 29 tests ciblés réussis. Doctrine GT Ultra et Literata synchronisée. Prochain geste : contrôler de nouveau le site dix minutes après déploiement. (28 October 2026, 20:54:59 +0100)
+
+## 28 October 2026, 21:04:43 +0100 : Iteration
+
+<!-- feedback-event:f6ca2c906474471a7b818cf54100ddaf3a5b712a630ea6e020072eed5fa7df65 (28 October 2026, 21:04:43 +0100) -->
+- Project: zenray-edit; kind: iteration. (28 October 2026, 21:04:43 +0100)
+- Source: checkpoint:codex:01a183ee-37b7-7c60-a028-d9f9a184591a. (28 October 2026, 21:04:43 +0100)
+
+> Contrôle dix minutes après le déploiement : le bundle index-ey3DoagV.js est toujours servi, Plan affiche 146 tâches et conserve GT Ultra pour les commandes et Literata pour les titres. Prochain geste : poursuivre les ajustements demandés. (28 October 2026, 21:04:43 +0100)
+
+## 28 October 2026, 21:04:54 +0100 : Iteration
+
+<!-- feedback-event:468cabd7a6491f790842e2892fe9506aaeca64bc43588d7a359070bf0cce2c9f (28 October 2026, 21:04:54 +0100) -->
+- Project: zenray-edit; kind: iteration. (28 October 2026, 21:04:54 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (28 October 2026, 21:04:54 +0100)
+
+> Les changements sont en ligne sur [ZenRay Progress](https://zenray-progress.pages.dev/). J’ai limité les modifications du site à la sidebar, Create et Plan, comme demandé. (28 October 2026, 21:04:54 +0100)
+>
+> | Ce que tu voulais | Fait | Comment je le sais | (28 October 2026, 21:04:54 +0100)
+> |---|---|---| (28 October 2026, 21:04:54 +0100)
+> | Designs dans Assets et vue ZenRay Edit | Oui | Les cinq designs et leurs miniatures sont dans le cloud; la dernière maquette s’ouvre dans la galerie en ligne. | (28 October 2026, 21:04:54 +0100)
+> | Sidebar et Create en GT Ultra | Oui | Les polices sont mesurées sur le site en ligne. | (28 October 2026, 21:04:54 +0100)
+> | Plan en GT Ultra et Literata | Oui | Les commandes utilisent GT Ultra et les titres de tâches restent en Literata. | (28 October 2026, 21:04:54 +0100)
+> | Duo dans Claude et ZenRay Edit | Oui | Les règles sont mises à jour et synchronisées. | (28 October 2026, 21:04:54 +0100)
+> | Vérification du site | Oui | 29 contrôles passent; dix minutes après le déploiement, le même code est servi et Plan affiche 146 tâches. | (28 October 2026, 21:04:54 +0100)
