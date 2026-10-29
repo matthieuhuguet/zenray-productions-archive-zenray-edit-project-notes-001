@@ -1057,3 +1057,29 @@
 >   <decision>DONT_NOTIFY</decision> (29 October 2026, 14:01:46 +0100)
 >   <message>Un aperçu réel de la lettre est en cours d’archivage pour vérifier le classement des images.</message> (29 October 2026, 14:01:46 +0100)
 > </heartbeat> (29 October 2026, 14:01:46 +0100)
+
+## 29 October 2026, 14:31:27 +0100 : Prompt
+
+<!-- feedback-event:23e96a71c55f3ead56c2e28265abcc21102a7b38dc8969208bb8d458c7ffd795 (29 October 2026, 14:31:27 +0100) -->
+- Project: zenray-edit; kind: prompt. (29 October 2026, 14:31:27 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 14:31:27 +0100)
+
+> <heartbeat> (29 October 2026, 14:31:27 +0100)
+>   <automation_id>terminer-la-galerie-m-dias-zenray-edit</automation_id> (29 October 2026, 14:31:27 +0100)
+>   <current_time_iso>2026-10-29T13:31:27.546Z</current_time_iso> (29 October 2026, 14:31:27 +0100)
+>   <instructions> (29 October 2026, 14:31:27 +0100)
+> Vérifie si la galerie ZenRay Edit liste et filtre les HTML, PDF, images et vidéos archivés dans Assets, si les médias créés sont automatiquement reliés au projet sans placer les gros MP4 dans le skill, et si le CV et la lettre Ludia sont accessibles. Vérifie les preuves et le dernier état. Si le travail est inachevé et aucune exécution de cette tâche ne tourne, reprends au dernier point vérifié et poursuis. Si une exécution tourne, ne lance pas de doublon. Reste silencieux tant que rien ne change et signale seulement une réussite, un nouvel échec ou une intervention nécessaire. Désactive ce suivi quand le résultat est prouvé. (29 October 2026, 14:31:27 +0100)
+>   </instructions> (29 October 2026, 14:31:27 +0100)
+> </heartbeat> (29 October 2026, 14:31:27 +0100)
+
+## 29 October 2026, 14:31:44 +0100 : Iteration
+
+<!-- feedback-event:9b7b5bd37b9353b9a8cefa495e9629696610903c20cb906bf12b5d8fa4032f5e (29 October 2026, 14:31:44 +0100) -->
+- Project: zenray-edit; kind: iteration. (29 October 2026, 14:31:44 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 14:31:44 +0100)
+
+> <heartbeat> (29 October 2026, 14:31:44 +0100)
+>   <automation_id>terminer-la-galerie-m-dias-zenray-edit</automation_id> (29 October 2026, 14:31:44 +0100)
+>   <decision>NOTIFY</decision> (29 October 2026, 14:31:44 +0100)
+>   <message>L’aperçu image de la lettre Ludia est maintenant archivé dans Assets, avec une empreinte identique au fichier local. La vérification des vidéos et de l’affichage publié reste ouverte.</message> (29 October 2026, 14:31:44 +0100)
+> </heartbeat> (29 October 2026, 14:31:44 +0100)
