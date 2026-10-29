@@ -1135,3 +1135,29 @@
 >   <decision>DONT_NOTIFY</decision> (29 October 2026, 15:31:40 +0100)
 >   <message>La liste Assets contient toujours l’aperçu image et les deux PDF ; la vérification vidéo reste ouverte.</message> (29 October 2026, 15:31:40 +0100)
 > </heartbeat> (29 October 2026, 15:31:40 +0100)
+
+## 29 October 2026, 16:01:28 +0100 : Prompt
+
+<!-- feedback-event:ee871ce3188fdaddd3c96dd8ae8d76742ffc52b54b00bb3e580648fc1cf71413 (29 October 2026, 16:01:28 +0100) -->
+- Project: zenray-edit; kind: prompt. (29 October 2026, 16:01:28 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 16:01:28 +0100)
+
+> <heartbeat> (29 October 2026, 16:01:28 +0100)
+>   <automation_id>terminer-la-galerie-m-dias-zenray-edit</automation_id> (29 October 2026, 16:01:28 +0100)
+>   <current_time_iso>2026-10-29T15:01:28.471Z</current_time_iso> (29 October 2026, 16:01:28 +0100)
+>   <instructions> (29 October 2026, 16:01:28 +0100)
+> Vérifie si la galerie ZenRay Edit liste et filtre les HTML, PDF, images et vidéos archivés dans Assets, si les médias créés sont automatiquement reliés au projet sans placer les gros MP4 dans le skill, et si le CV et la lettre Ludia sont accessibles. Vérifie les preuves et le dernier état. Si le travail est inachevé et aucune exécution de cette tâche ne tourne, reprends au dernier point vérifié et poursuis. Si une exécution tourne, ne lance pas de doublon. Reste silencieux tant que rien ne change et signale seulement une réussite, un nouvel échec ou une intervention nécessaire. Désactive ce suivi quand le résultat est prouvé. (29 October 2026, 16:01:28 +0100)
+>   </instructions> (29 October 2026, 16:01:28 +0100)
+> </heartbeat> (29 October 2026, 16:01:28 +0100)
+
+## 29 October 2026, 16:01:37 +0100 : Iteration
+
+<!-- feedback-event:464c14cb308f9a48a5f2dcbfd8cda219357375fd1e5ef03dab867a6249c1efbb (29 October 2026, 16:01:37 +0100) -->
+- Project: zenray-edit; kind: iteration. (29 October 2026, 16:01:37 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 16:01:37 +0100)
+
+> <heartbeat> (29 October 2026, 16:01:37 +0100)
+>   <automation_id>terminer-la-galerie-m-dias-zenray-edit</automation_id> (29 October 2026, 16:01:37 +0100)
+>   <decision>DONT_NOTIFY</decision> (29 October 2026, 16:01:37 +0100)
+>   <message>La vérification vidéo reste ouverte ; aucun nouveau résultat ne demande ton intervention.</message> (29 October 2026, 16:01:37 +0100)
+> </heartbeat> (29 October 2026, 16:01:37 +0100)
