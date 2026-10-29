@@ -901,3 +901,55 @@
 >   <decision>DONT_NOTIFY</decision> (29 October 2026, 12:41:01 +0100)
 >   <message>Aucun nouveau résultat ne modifie l’état de la vérification.</message> (29 October 2026, 12:41:01 +0100)
 > </heartbeat> (29 October 2026, 12:41:01 +0100)
+
+## 29 October 2026, 12:45:56 +0100 : Prompt
+
+<!-- feedback-event:3896c38697748e183a87b82d317dbf103822e9b8ecb90d36717922947eeb1497 (29 October 2026, 12:45:56 +0100) -->
+- Project: zenray-edit; kind: prompt. (29 October 2026, 12:45:56 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 12:45:56 +0100)
+
+> <heartbeat> (29 October 2026, 12:45:56 +0100)
+>   <automation_id>terminer-la-galerie-m-dias-zenray-edit</automation_id> (29 October 2026, 12:45:56 +0100)
+>   <current_time_iso>2026-10-29T11:45:56.414Z</current_time_iso> (29 October 2026, 12:45:56 +0100)
+>   <instructions> (29 October 2026, 12:45:56 +0100)
+> Vérifie si la galerie ZenRay Edit liste et filtre les HTML, PDF, images et vidéos archivés dans Assets, si les médias créés sont automatiquement reliés au projet sans placer les gros MP4 dans le skill, et si le CV et la lettre Ludia sont accessibles. Vérifie les preuves et le dernier état. Si le travail est inachevé et aucune exécution de cette tâche ne tourne, reprends au dernier point vérifié et poursuis. Si une exécution tourne, ne lance pas de doublon. Reste silencieux tant que rien ne change et signale seulement une réussite, un nouvel échec ou une intervention nécessaire. Désactive ce suivi quand le résultat est prouvé. (29 October 2026, 12:45:56 +0100)
+>   </instructions> (29 October 2026, 12:45:56 +0100)
+> </heartbeat> (29 October 2026, 12:45:56 +0100)
+
+## 29 October 2026, 12:46:02 +0100 : Iteration
+
+<!-- feedback-event:fda3098bc308944f1be4fdb78e7c3a525d50cb1da3e7012b232cd45ee0b0bca9 (29 October 2026, 12:46:02 +0100) -->
+- Project: zenray-edit; kind: iteration. (29 October 2026, 12:46:02 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 12:46:02 +0100)
+
+> <heartbeat> (29 October 2026, 12:46:02 +0100)
+>   <automation_id>terminer-la-galerie-m-dias-zenray-edit</automation_id> (29 October 2026, 12:46:02 +0100)
+>   <decision>DONT_NOTIFY</decision> (29 October 2026, 12:46:02 +0100)
+>   <message>Une archive Assets vient de se terminer, mais les dernières vérifications de la galerie restent à faire.</message> (29 October 2026, 12:46:02 +0100)
+> </heartbeat> (29 October 2026, 12:46:02 +0100)
+
+## 29 October 2026, 12:50:56 +0100 : Prompt
+
+<!-- feedback-event:b1d36269802df5ce8a1c69aa0f735940d412135e9cf76cf89d74db4ac6196047 (29 October 2026, 12:50:56 +0100) -->
+- Project: zenray-edit; kind: prompt. (29 October 2026, 12:50:56 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 12:50:56 +0100)
+
+> <heartbeat> (29 October 2026, 12:50:56 +0100)
+>   <automation_id>terminer-la-galerie-m-dias-zenray-edit</automation_id> (29 October 2026, 12:50:56 +0100)
+>   <current_time_iso>2026-10-29T11:50:56.456Z</current_time_iso> (29 October 2026, 12:50:56 +0100)
+>   <instructions> (29 October 2026, 12:50:56 +0100)
+> Vérifie si la galerie ZenRay Edit liste et filtre les HTML, PDF, images et vidéos archivés dans Assets, si les médias créés sont automatiquement reliés au projet sans placer les gros MP4 dans le skill, et si le CV et la lettre Ludia sont accessibles. Vérifie les preuves et le dernier état. Si le travail est inachevé et aucune exécution de cette tâche ne tourne, reprends au dernier point vérifié et poursuis. Si une exécution tourne, ne lance pas de doublon. Reste silencieux tant que rien ne change et signale seulement une réussite, un nouvel échec ou une intervention nécessaire. Désactive ce suivi quand le résultat est prouvé. (29 October 2026, 12:50:56 +0100)
+>   </instructions> (29 October 2026, 12:50:56 +0100)
+> </heartbeat> (29 October 2026, 12:50:56 +0100)
+
+## 29 October 2026, 12:51:07 +0100 : Iteration
+
+<!-- feedback-event:c63b0afe7991eacbd9b0aad3c487670964ca742f29e87bba3bc2c6d0217353d8 (29 October 2026, 12:51:07 +0100) -->
+- Project: zenray-edit; kind: iteration. (29 October 2026, 12:51:07 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 12:51:07 +0100)
+
+> <heartbeat> (29 October 2026, 12:51:07 +0100)
+>   <automation_id>terminer-la-galerie-m-dias-zenray-edit</automation_id> (29 October 2026, 12:51:07 +0100)
+>   <decision>DONT_NOTIFY</decision> (29 October 2026, 12:51:07 +0100)
+>   <message>Les deux PDF restent présents dans la liste Assets ; les autres vérifications restent ouvertes.</message> (29 October 2026, 12:51:07 +0100)
+> </heartbeat> (29 October 2026, 12:51:07 +0100)
