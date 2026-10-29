@@ -1363,3 +1363,55 @@
 >   <decision>DONT_NOTIFY</decision> (29 October 2026, 17:03:44 +0100)
 >   <message>Les PDF et l’image restent présents dans Assets ; la vérification d’un export vidéo réel reste ouverte.</message> (29 October 2026, 17:03:44 +0100)
 > </heartbeat> (29 October 2026, 17:03:44 +0100)
+
+## 29 October 2026, 17:31:36 +0100 : Prompt
+
+<!-- feedback-event:ebc1e29a17e8cb63f8944764ae7f65b900bfbe64f3225f288b7e85c648835dd5 (29 October 2026, 17:31:36 +0100) -->
+- Project: zenray-edit; kind: prompt. (29 October 2026, 17:31:36 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 17:31:36 +0100)
+
+> [$zenray-resume-coordinator](/Users/zenray/.codex/skills/zenray-resume-coordinator/SKILL.md) Louisiana Bayou Est-ce que tu peux ouvrir le Java Bayou et reprendre mon dernier projet et juste ouvrir la scène via le MCP. Mais il y a déjà une scène Houdini ID qui est déjà ouverte et je travaille sur la voiture, donc j'aimerais si possible que tu aies une autre scène. J'aimerais reprendre mon projet là où on s'en était resté. J'ai pas forcément besoin que tu mindes cette conversation. J'ai vraiment juste besoin de l'ouvrir. (29 October 2026, 17:31:36 +0100)
+
+## 29 October 2026, 17:32:30 +0100 : Iteration
+
+<!-- feedback-event:787a5e31016ec39f6d0a1511461ee742ab3ab498e6ade1a06e26835621a3f3b1 (29 October 2026, 17:32:30 +0100) -->
+- Project: zenray-edit; kind: iteration. (29 October 2026, 17:32:30 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 17:32:30 +0100)
+
+> La dernière scène **LouisianaBayou.hiplc**, sauvegardée le 24 October 2026, est lancée via le MCP dans une **seconde instance de Houdini**. L’instance existante reste ouverte sur ton travail en cours. (29 October 2026, 17:32:30 +0100)
+>
+> Cette conversation n’est pas reliée au projet. (29 October 2026, 17:32:30 +0100)
+
+## 29 October 2026, 17:33:29 +0100 : Prompt
+
+<!-- feedback-event:6e156b790453050af419c1bf6b120e21a701e3dacae5375c3bc49142940a3f7a (29 October 2026, 17:33:29 +0100) -->
+- Project: zenray-edit; kind: prompt. (29 October 2026, 17:33:29 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 17:33:29 +0100)
+
+> <heartbeat> (29 October 2026, 17:33:29 +0100)
+>   <automation_id>terminer-la-galerie-m-dias-zenray-edit</automation_id> (29 October 2026, 17:33:29 +0100)
+>   <current_time_iso>2026-10-29T16:33:29.038Z</current_time_iso> (29 October 2026, 17:33:29 +0100)
+>   <instructions> (29 October 2026, 17:33:29 +0100)
+> Vérifie si la galerie ZenRay Edit liste et filtre les HTML, PDF, images et vidéos archivés dans Assets, si les médias créés sont automatiquement reliés au projet sans placer les gros MP4 dans le skill, et si le CV et la lettre Ludia sont accessibles. Vérifie les preuves et le dernier état. Si le travail est inachevé et aucune exécution de cette tâche ne tourne, reprends au dernier point vérifié et poursuis. Si une exécution tourne, ne lance pas de doublon. Reste silencieux tant que rien ne change et signale seulement une réussite, un nouvel échec ou une intervention nécessaire. Désactive ce suivi quand le résultat est prouvé. (29 October 2026, 17:33:29 +0100)
+>   </instructions> (29 October 2026, 17:33:29 +0100)
+> </heartbeat> (29 October 2026, 17:33:29 +0100)
+
+## 29 October 2026, 17:33:50 +0100 : Iteration
+
+<!-- feedback-event:c3f2b86b4bd8fec9e7055a70ec76ab1d12926e1fc93a17302b4ca7a5250709d3 (29 October 2026, 17:33:50 +0100) -->
+- Project: zenray-edit; kind: iteration. (29 October 2026, 17:33:50 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 17:33:50 +0100)
+
+> <heartbeat> (29 October 2026, 17:33:50 +0100)
+>   <automation_id>terminer-la-galerie-m-dias-zenray-edit</automation_id> (29 October 2026, 17:33:50 +0100)
+>   <decision>DONT_NOTIFY</decision> (29 October 2026, 17:33:50 +0100)
+>   <message>Le contrôle de la liste Assets expire sans réponse ; aucune nouvelle preuve ne permet de clôturer la vérification.</message> (29 October 2026, 17:33:50 +0100)
+> </heartbeat> (29 October 2026, 17:33:50 +0100)
+
+## 29 October 2026, 17:37:19 +0100 : Prompt
+
+<!-- feedback-event:26e57b18e964243474c22f6486adf8a694f664f5fdf59200d247416ba44981c7 (29 October 2026, 17:37:19 +0100) -->
+- Project: zenray-edit; kind: prompt. (29 October 2026, 17:37:19 +0100)
+- Source: /Users/zenray/.codex/sessions/2026/10/28/rollout-2026-10-28T20-13-09-01a183ee-37b7-7c60-a028-d9f9a184591a.jsonl. (29 October 2026, 17:37:19 +0100)
+
+> [$zenray-houdini](/Users/zenray/.codex/skills/zenray-houdini/SKILL.md) Est-ce que tu peux set up 3 caméras et... Est-ce que tu peux créer 3 plans cinématographiques pour 3 plans cinématographiques de 10 secondes chacun, voire non, 4 plans cinématographiques, quoique 30 secondes, ça fait 6 plans. Ouais, 6, et il vaut mieux faire 6 plans de 5 secondes cinématographiques directement dans la scène Houdini. Avec les bonnes caméras, du coup. Une fois que je valide le plan, donc là, tu mets la scène en Houdini VK. Une fois que je valide la scène, c'est bon. Et ce que j'aimerais faire d'autre, c'est aussi... Ah oui, et c'est avoir un plan, du coup, parmi ces 6 plans, qui soit directement rendu avec... avec la vue Houdini VK, enfin Houdini VK en ghost wireframe. Quoique, à mon avis, on peut peut-être mettre en karma CPU avec la vue wireframe. Ah non, ça marche pas. Bon, bah, du coup, il faudra mettre une vue avec la vue wireframe, et ensuite il faudra créer des sous-titres par rapport aux détails techniques de cette vue, par rapport au toit. Mais l'article du toit est déjà indiqué, mais du coup il me faudra juste un seul paragraphe, enfin non, il me faudra plutôt 3 paragraphes qui expliquent comment le toit a été conçu et designé, mais il y a déjà un article qui résume ça. Donc voilà, donc j'ai besoin des 6 plans, et j'ai besoin des 3 paragraphes qui expliquent ça. Et c'est tout à peu près. Et ensuite, une fois que je valide les plans, il faudra rendre les plans du coup à 24 images par seconde. Pour l'instant, pour que je valide les plans, tu mets en vue Houdini VK dans Stage, afin que ça aille plus vite de valider. Mais il faut vraiment que les plans soient cinématographiques. Donc tu peux faire une vue plongée, contre-plongée, ce genre de choses.  [$tasks-sequence](/Users/zenray/.codex/skills/tasks-sequence/SKILL.md) Tu peux mettre aussi des bandes noires pour faire en sorte que ce soit en 21 neuvième. (29 October 2026, 17:37:19 +0100)
