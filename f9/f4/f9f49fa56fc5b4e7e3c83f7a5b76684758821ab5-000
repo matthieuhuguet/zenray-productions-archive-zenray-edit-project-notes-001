@@ -1,22 +1,22 @@
 {
  "schemaVersion": 1,
  "projectId": "zenray-edit",
- "scannedAt": "2026-10-30T09:20:25.034Z",
+ "scannedAt": "2026-10-31T07:51:19.524Z",
  "conversations": [
   {
    "projectId": "zenray-edit",
-   "lines": 231,
-   "work": 120,
+   "lines": 232,
+   "work": 121,
    "prompts": 2,
    "first": "2026-10-28T19:13:31.035Z",
-   "last": "2026-10-30T01:32:21.455Z",
+   "last": "2026-10-30T15:16:06.750Z",
    "strength": "strong",
    "conversationId": "codex:01a183ee-37b7-7c60-a028-d9f9a184591a",
    "provider": "codex",
    "sessionId": "01a183ee-37b7-7c60-a028-d9f9a184591a",
    "title": "Conversation codex 01a183ee",
-   "updatedAt": "2026-10-30T03:11:26.597Z",
-   "bytes": 105000546,
+   "updatedAt": "2026-10-31T06:22:27.936Z",
+   "bytes": 130681305,
    "boundProject": "zenray-edit"
   },
   {
@@ -94,8 +94,8 @@
    "conversationId": "gemini:677fd6b2-6c8d-446c-83ce-d37211c3efa9",
    "provider": "gemini",
    "sessionId": "677fd6b2-6c8d-446c-83ce-d37211c3efa9",
-   "title": "Conversation Gemini 677fd6b2",
-   "updatedAt": "2026-10-18T21:35:49.212Z",
+   "title": "désinstalle pika l'app qui permet de faire en sorte d'avoir une pipette et get la couleur et fais en sorte soit de coder l'app la plus leigh",
+   "updatedAt": "2026-10-18T21:35:04.197544+00:00",
    "bytes": 24936448,
    "boundProject": "zenray-color-picker-18-october-2026"
   },
@@ -111,8 +111,8 @@
    "provider": "claude",
    "sessionId": "38575095-b716-47ed-af1d-bf22b8ff30eb",
    "title": "zenray freelance",
-   "updatedAt": "2026-10-30T00:33:11.745Z",
-   "bytes": 39014,
+   "updatedAt": "2026-10-30T13:00:29.267Z",
+   "bytes": 38851,
    "boundProject": "zenray-calendar-plan-23-october-2026"
   },
   {
@@ -158,8 +158,8 @@
    "conversationId": "gemini:68bf0e84-6468-4b55-8627-e4c157181a7d",
    "provider": "gemini",
    "sessionId": "68bf0e84-6468-4b55-8627-e4c157181a7d",
-   "title": "Conversation Gemini 68bf0e84",
-   "updatedAt": "2026-10-27T17:16:30.825Z",
+   "title": "zenray freelance À l’attention de l’équipe recrutement, Bonjour People Can Fly, Je vous écris au sujet de votre offre « Artiste technique / ",
+   "updatedAt": "2026-10-27T17:15:47.936781+00:00",
    "bytes": 32374784,
    "boundProject": null
   },
@@ -320,7 +320,7 @@
    "sessionId": "beb9938e-4434-4925-8d13-137bb7940fc0",
    "title": "zenray uv",
    "updatedAt": "2026-10-23T13:08:52.408Z",
-   "bytes": 40374,
+   "bytes": 40956,
    "boundProject": "louisiana-bayou"
   },
   {
