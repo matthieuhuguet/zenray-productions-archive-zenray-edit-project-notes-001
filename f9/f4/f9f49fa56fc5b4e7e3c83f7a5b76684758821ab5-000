@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "projectId": "zenray-edit",
- "scannedAt": "2026-11-14T01:24:02.353Z",
+ "scannedAt": "2026-11-14T07:25:21.566Z",
  "conversations": [
   {
    "projectId": "zenray-edit",
@@ -216,6 +216,22 @@
    "lines": 3,
    "work": 0,
    "prompts": 0,
+   "first": "2026-11-12T13:28:15.555Z",
+   "last": "2026-11-14T03:25:33.629Z",
+   "strength": "weak",
+   "conversationId": "claude:48664bcf-655d-4f1c-8f4c-981e576050ff",
+   "provider": "claude",
+   "sessionId": "48664bcf-655d-4f1c-8f4c-981e576050ff",
+   "title": "guides + actuellement status",
+   "updatedAt": "2026-11-14T03:30:21.996Z",
+   "bytes": 284608,
+   "boundProject": null
+  },
+  {
+   "projectId": "zenray-edit",
+   "lines": 3,
+   "work": 0,
+   "prompts": 0,
    "first": "2026-10-25T13:42:45.248Z",
    "last": "2026-10-25T14:02:37.218Z",
    "strength": "weak",
@@ -226,22 +242,6 @@
    "updatedAt": "2026-10-29T17:48:38.098Z",
    "bytes": 38168,
    "boundProject": "qlmarkdown-designs-25-october-2026"
-  },
-  {
-   "projectId": "zenray-edit",
-   "lines": 2,
-   "work": 0,
-   "prompts": 0,
-   "first": "2026-11-12T13:28:15.555Z",
-   "last": "2026-11-12T14:06:03.867Z",
-   "strength": "weak",
-   "conversationId": "claude:48664bcf-655d-4f1c-8f4c-981e576050ff",
-   "provider": "claude",
-   "sessionId": "48664bcf-655d-4f1c-8f4c-981e576050ff",
-   "title": "guides + actuellement status",
-   "updatedAt": "2026-11-14T01:08:24.721Z",
-   "bytes": 284584,
-   "boundProject": null
   },
   {
    "projectId": "zenray-edit",
